@@ -1,26 +1,16 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld />
-      <v-card class="mx-auto" width="400" prepend-icon="mdi-email">
-        <v-card-text> Coucou à tous </v-card-text>
-      </v-card>
-    </v-main>
-  </v-app>
+  <NavMenu />
+  <SliderHome />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import NavMenu from "./components/Menu.vue";
+import SliderHome from "./components/SliderHome.vue";
 export default {
   name: "App",
-
   components: {
-    HelloWorld,
+    NavMenu,
+    SliderHome,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
